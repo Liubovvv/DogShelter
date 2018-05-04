@@ -1,6 +1,12 @@
 import React from "react";
+import {Greeting} from "Greeting";
 
-export const App2 = props => {
+export const Home = props => {
+    const sayHi = "user"
     return (
-        <div>Home</div>
+        <div>
+            Home
+        </div>
+        <Greeting greeting= "user" />
+
     )};
