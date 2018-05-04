@@ -1,9 +1,11 @@
 import React from "react";
 
 export const Greeting = props => {
-    const greeting = "guest!";
+    const {greeting} = props;
+
     return (
         <div>
             Hello, {greeting}
-            </div>
-        )};
+        </div>
+    );
+};
