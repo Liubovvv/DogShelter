@@ -6,10 +6,12 @@ import {Greeting} from "./Greeting";
 
 const Root =  store  => (
     <Provider store={store}>
-        <Router>
-            <Route path="/" component={Greeting} />
-
-        </Router>
+         <Router>
+             <switch>
+                <Route path="/" component={Greeting} />
+                 <Route path="/hhh" component={Greeting} />
+             </switch>
+         </Router>
     </Provider>
 );
 Root.propTypes = {
