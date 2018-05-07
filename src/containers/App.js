@@ -1,18 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router} from "react-router-dom";
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import { Provider } from "react-redux";
-import {Container} from "./Container";
+import {Layout} from "./Layout";
 
-const Root =  ({store})  => (
+const App =  ({store})  => (
     <Provider store={store}>
          <Router>
-             <Container />
+             <Layout />
          </Router>
     </Provider>
 );
 
-Root.propTypes = {
+App.propTypes = {
     store: PropTypes.oneOfType( [
         PropTypes.func.isRequired,
         PropTypes.object.isRequired,
@@ -20,4 +20,4 @@ Root.propTypes = {
 };
 
 
-export default Root;
+export default App;
