@@ -10,7 +10,10 @@ import {Description} from "../../components/Description";
      };
 
      render(){
-         const {breedList} = this.props;
+         const { breedList, imagesList } = this.props;
+
+         console.log('BREEDS', breedList);
+
          return (
              <div>
                  <Greeting greeting="user" />

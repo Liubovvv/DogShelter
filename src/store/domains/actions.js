@@ -5,11 +5,10 @@ export const setBreed = value => ({
     value,
 });
 
-// export const getImage = () => ({
-//
-//         type: 'GET_IMAGE',
-//         src
-//     });
+/*export const getImage = images => ({
+    type: 'GET_IMAGES',
+    images,
+    });*/
 
 export const loadData = () => dispatch => {
     getBreed().then(res =>

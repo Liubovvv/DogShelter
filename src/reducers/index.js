@@ -2,7 +2,7 @@ import {combineReducers} from "redux";
 import breedsReducer from './breedsReducer';
 
 const  index = combineReducers({
-    mainReducer: breedsReducer
+    breedsReducer: breedsReducer
 });
 
 export default index;

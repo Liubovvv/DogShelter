@@ -3,7 +3,7 @@ export const text ='breed`s info';
 export const images = [
     {
         id: 1,
-        src: 'http://cdn.imgbb.ru/user/85/852641/6ad570e07c2bc0465f8b93a3ad9c6ef8.jpg',
+        src: 'https://cdn.imgbb.ru/user/85/852641/6ad570e07c2bc0465f8b93a3ad9c6ef8.jpg',
         alt: 'AFFENPINSCHER'
     },
     {
@@ -13,17 +13,17 @@ export const images = [
     },
     {
         id: 3,
-        /*src: 'https://store.dog.ceo/breeds/dingo/n02115641_7620.jpg',*/
+        src: 'https://store.dog.ceo/breeds/dingo/n02115641_7620.jpg',
         alt: "dingo"
     },
     {
         id: 4,
-        /*src: 'https://store.dog.ceo/breeds/springer-english/n02102040_3610.jpg',*/
+        src: 'https://store.dog.ceo/breeds/springer-english/n02102040_3610.jpg',
         alt: "springer-english"
     },
     {
         id: 5,
-       /* src: 'https://store.dog.ceo/breeds/african/n02116738_2020.jpg',*/
+        src: 'https://store.dog.ceo/breeds/african/n02116738_2020.jpg',
         alt: "african"
     },
     {
