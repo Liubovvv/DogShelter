@@ -1,5 +1,5 @@
 import {combineReducers} from "redux";
-import breedsReducer from './mainReducer';
+import breedsReducer from './breedsReducer';
 
 const  index = combineReducers({
     mainReducer: breedsReducer

@@ -1,4 +1,4 @@
-import {getBreedDescription, getBreedImage} from "api";
+import {getBreed, getBreedImage} from "configs";
 
 export const setBreed = value => ({
     type: 'GET_BREEDS',
@@ -12,6 +12,6 @@ export const setBreed = value => ({
 //     });
 
 export const loadData = () => dispatch => {
-    getBreedDescription().then(res =>
+    getBreed().then(res =>
         dispatch(setBreed(res)));
 }

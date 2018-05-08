@@ -1,9 +1,8 @@
 import React from "react";
 import {Greeting} from "../../components/Greeting";
-import {breedsInfo} from "../../configs/config";
+import {breedsInfo, text} from "../../configs";
 import {List} from "../../components/List";
 import {Description} from "../../components/Description";
-import {text} from "../../configs/config";
 
  class Home extends React.Component{
      componentWillMount() {
