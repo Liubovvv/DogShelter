@@ -1,6 +1,6 @@
 import React from "react";
 import {Greeting} from "../../components/Greeting";
-import {breedsInfo, text} from "../../configs";
+import {breedsInfo, text} from "../../resources";
 import {List} from "../../components/List";
 import {Description} from "../../components/Description";
 
@@ -11,9 +11,6 @@ import {Description} from "../../components/Description";
 
      render(){
          const { breedList, imagesList } = this.props;
-
-         console.log('BREEDS', breedList);
-
          return (
              <div>
                  <Greeting greeting="user" />

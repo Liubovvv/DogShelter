@@ -10,3 +10,7 @@ ul{
 li{
     margin: 0 10px;
 }
+img {
+  width: 300px;
+  height: 200px;
+}

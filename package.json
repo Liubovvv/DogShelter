@@ -2,6 +2,11 @@
   "name": "dogs",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/api": {
+      "target": "https://dog.ceo"
+    }
+  },
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -12,7 +17,8 @@
     "redux-devtools-extension": "^2.13.2",
     "redux-logger": "^3.0.6",
     "redux-promise-middleware": "^5.1.1",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "superagent": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",

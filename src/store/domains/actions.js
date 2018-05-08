@@ -1,16 +1,17 @@
-import {getBreed, getBreedImage} from "configs";
+import actionTypes from './actionTypes'
+import {getBreedList, getImage} from '../../resources';
 
-export const setBreed = value => ({
-    type: 'GET_BREEDS',
-    value,
+export const setBreedImage = () => ({
+    type: actionTypes.GET_IMAGES,
+    payload: getImage(),
 });
 
-/*export const getImage = images => ({
-    type: 'GET_IMAGES',
-    images,
-    });*/
+export const setBreed = () => ({
+    type: actionTypes.GET_BREEDS,
+    payload: getBreedList(),
+});
 
 export const loadData = () => dispatch => {
-    getBreed().then(res =>
-        dispatch(setBreed(res)));
-}
+    dispatch(setBreedImage());
+    dispatch(setBreed());
+};

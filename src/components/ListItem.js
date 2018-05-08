@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Description } from "./Description";
-import {Image} from "./Image";
-import {breedsInfo} from "../configs";
+import { Description } from './Description';
+import {Image} from './Image';
 
 export const ListItem = props => {
     const {
@@ -10,7 +9,6 @@ export const ListItem = props => {
         alt,
         src,
     } = props;
-    console.log(breedsInfo, "0101010100101001");
     return(
         <div>
             <Description text={text} />

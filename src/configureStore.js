@@ -1,22 +1,15 @@
-import { createStore, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-import { createLogger } from "redux-logger";
-import reducer from "./reducers";
+import { createStore, applyMiddleware } from 'redux';
+import reducer from './reducers';
+import createMiddleware from 'store/middleware';
 
+const middleware = createMiddleware();
 const configureStore = () => {
-    const middlewares = [ thunk ];
-
-
-    // if ( process.env.NODE_ENV !== "production" ) {
-        middlewares.push( createLogger() );
-    // }
-
 
     /* eslint-disable no-underscore-dangle */
     return createStore(
         reducer,
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-        applyMiddleware( ...middlewares ),
+        applyMiddleware( ...middleware ),
     );
     /* eslint-enable */
 };

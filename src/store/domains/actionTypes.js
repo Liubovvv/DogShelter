@@ -1,0 +1,12 @@
+export default Object.freeze({
+
+    GET_IMAGES: 'breedsReducer/GET_IMAGES',
+    GET_IMAGES_PENDING: 'breedsReducer/GET_IMAGES_PENDING',
+    GET_IMAGES_FULFILLED: 'breedsReducer/GET_IMAGES_FULFILLED',
+    GET_IMAGES_REJECTED: 'breedsReducer/GET_IMAGES_REJECTED',
+
+    GET_BREEDS: 'breedsReducer/GET_BREEDS',
+    GET_BREEDS_PENDING: 'breedsReducer/GET_BREEDS_PENDING',
+    GET_BREEDS_FULFILLED: 'breedsReducer/GET_BREEDS_FULFILLED',
+    GET_BREEDS_REJECTED: 'breedsReducer/GET_BREEDS_REJECTED',
+})
