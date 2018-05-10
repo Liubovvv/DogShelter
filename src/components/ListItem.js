@@ -6,17 +6,19 @@ import {Image} from './Image';
 export const ListItem = props => {
     const {
         text,
-        images
+        image
+        //images
     } = props;
     return(
         <div>
             <Description text={text} />
-            {images.map(image =>
-                <Image
-                    key={image.id}
-                    {...image}
-                />
-            )}
+            <Image {...image} />
+            {/*{images.map(image =>*/}
+                {/*<Image*/}
+                    {/*key={image.id}*/}
+                    {/*{...image}*/}
+                {/*/>*/}
+            {/*)}*/}
         </div>
     );
 };

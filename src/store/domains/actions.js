@@ -11,7 +11,17 @@ export const getBreed = () => ({
     payload: getBreedList(),
 });
 
-export const loadData = () => dispatch => {
-    dispatch(getBreedImage());
+export const getRandomImages = num => ({
+    type: actionTypes.GET_IMAGES,
+    payload: getImage(num),
+});
+
+export const getRandomFooterImages = num => ({
+    type: actionTypes.GET_FOOTER_IMAGES,
+    payload: getImage(num),
+});
+
+export const loadData = num => dispatch => {
+    dispatch(getRandomImages(num));
     dispatch(getBreed());
 };

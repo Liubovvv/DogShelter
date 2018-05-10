@@ -4,18 +4,18 @@ import {breedsInfo, text} from 'resources';
 import {List} from 'components/List';
 import {Description} from 'components/Description';
 import {Image} from 'components/Image';
+import {FooterHOC} from 'components/FooterHOC';
 
-
- class Home extends React.Component{
+class Home extends React.Component{
      componentWillMount() {
-         this.props.loadData();
+         this.props.loadData(3);
      };
-
      render(){
          const {
              ids,
              images
          } = this.props;
+
          return (
              <div>
                  <Greeting greeting="user" />
@@ -28,4 +28,4 @@ import {Image} from 'components/Image';
      }
 }
 
-export default Home;
+export default FooterHOC(Home);

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 import { ListItem } from "./ListItem";
 
@@ -9,7 +10,7 @@ export const List = props => {
         <div>
             {breedsInfo.map( breed =>
                 <ListItem
-                    key={breed.id}
+                    key={ v4() }
                     {...breed}
                 />
             )}

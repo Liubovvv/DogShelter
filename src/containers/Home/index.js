@@ -1,17 +1,19 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import { loadData } from 'store/domains/actions';
+import { loadData, getRandomFooterImages } from 'store/domains/actions';
 import Home from './view';
-import { selectBreeds, selectImages } from 'store/domains/selectors';
+import { selectBreeds, selectImages, selectFooterImages } from 'store/domains/selectors';
 
 const mapStateToProps = state => ({
-    breedList: selectBreeds(state),
-    imagesList: selectImages(state),
+    ids: selectBreeds(state),
+    images: selectImages(state),
+    footerImages: selectFooterImages(state)
+
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators(
     {
-        loadData,
+        loadData,getRandomFooterImages
     }, dispatch
 );
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
