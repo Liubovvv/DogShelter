@@ -55,7 +55,7 @@ export const images = [
     }
 ];
 
-export const breedsInfo = [
+/*export const breedsInfo = [
     {
         id: 1,
         text: 'AFFENPINSCHER',
@@ -106,14 +106,14 @@ export const breedsInfo = [
         text: "bullterrier-staffordshire",
         image: images[9]
     }
-];
+];*/
 
 //export const getBreed = () => new Promise(resolve => setTimeout(() => resolve(breedsInfo), 500));
 
 //export const getBreedImage = () => new Promise(resolve => setTimeout(() => resolve(images), 500));
 
 export const getBreedList = () =>
-    apiClient.get('https://dog.ceo/api/breeds/list/all', { });
+    apiClient.get('https://dog.ceo/api/breeds/list/all');
 
-export const getImage = (breed) =>
-    apiClient.get('https://dog.ceo/api/breeds/image/random/3 Fetch!', { });
+export const getImage = (num) =>
+    apiClient.get(`https://dog.ceo/api/breeds/image/random${num}`);

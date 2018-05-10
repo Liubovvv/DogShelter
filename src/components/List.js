@@ -10,9 +10,7 @@ export const List = props => {
             {breedsInfo.map( breed =>
                 <ListItem
                     key={breed.id}
-                    text={breed.text}
-                    alt={breed.image.alt}
-                    src={breed.image.src}
+                    {...breed}
                 />
             )}
         </div>

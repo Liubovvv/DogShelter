@@ -2,11 +2,11 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import { loadData } from 'store/domains/actions';
 import Home from './view';
-import { selectBreedsList, selectImagesList } from 'store/domains/selectors';
+import { selectBreeds, selectImages } from 'store/domains/selectors';
 
 const mapStateToProps = state => ({
-    breedList: selectBreedsList(state),
-    imagesList: selectImagesList(state),
+    breedList: selectBreeds(state),
+    imagesList: selectImages(state),
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators(
