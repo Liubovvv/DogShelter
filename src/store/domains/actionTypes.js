@@ -1,5 +1,4 @@
 export default Object.freeze({
-
     GET_IMAGES: 'breedsReducer/GET_IMAGES',
     GET_IMAGES_PENDING: 'breedsReducer/GET_IMAGES_PENDING',
     GET_IMAGES_FULFILLED: 'breedsReducer/GET_IMAGES_FULFILLED',

@@ -1,12 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import {bindActionCreators} from 'redux';
-
-import {Image} from "./Image";
-import { getRandomFooterImages } from '../store/domains/actions';
 import { v4 } from 'uuid';
 
+import { Image } from "./Image";
 
 export default class Footer extends React.Component {
     constructor() {
@@ -26,8 +21,15 @@ export default class Footer extends React.Component {
 
     handleOnSubmit(e) {
         e.preventDefault();
-        const { numbers } = this.state;
-        this.props.getRandomFooterImages(numbers);
+        if (!this.state.numbers.trim() || !this.isValid(this.state.numbers)) {
+            alert("Incorrect data. Enter from 3 to 5");
+            return;
+        }
+        this.props.getRandomFooterImages(this.state.numbers);
+    };
+
+    isValid = value => {
+        return value >= 3 && value <= 5;
     };
 
     render() {

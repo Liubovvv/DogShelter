@@ -1,8 +1,9 @@
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
 import { loadData, getRandomFooterImages } from 'store/domains/actions';
+import { selectBreeds,selectFirt10Breeds, selectImages, selectFooterImages } from 'store/domains/selectors';
 import Home from './view';
-import { selectBreeds, selectImages, selectFooterImages } from 'store/domains/selectors';
 
 const mapStateToProps = state => ({
     ids: selectBreeds(state),

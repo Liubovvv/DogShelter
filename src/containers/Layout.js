@@ -1,10 +1,11 @@
 import React from "react";
-import {Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+
 import Home from "containers/Home";
-import {BreedOverview} from "containers/BreedOverview";
-import {AllBreads} from "containers/AllBreads";
-import {RandomBreed} from "containers/RandomBreed";
-import {Menu} from "../components/Menu";
+import { BreedOverview } from "containers/BreedOverview";
+import { AllBreads } from "containers/AllBreads";
+import { RandomBreed } from "containers/RandomBreed";
+import { Menu } from "../components/Menu";
 
 export const Layout = () => (
     <div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 
 export const FooterHOC = (PassedComponent) => {
-    class Parent extends React.Component {
+    class WithFooter extends React.Component {
         render() {
             const{
                 footerImages,
@@ -24,8 +24,8 @@ export const FooterHOC = (PassedComponent) => {
         }
     }
 
-    FooterHOC.displayName = `Parent(${getDisplayName(PassedComponent)})`;
-    return Parent;
+    WithFooter.displayName = `WithFooter(${getDisplayName(PassedComponent)})`;
+    return WithFooter;
 };
 
 function getDisplayName(PassedComponent) {

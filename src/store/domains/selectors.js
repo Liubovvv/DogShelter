@@ -13,3 +13,4 @@ export const selectRandomImages = (num) => createSelector(
     [ selectImages ],
     (images) => images.slice(0, num)
 );
+export const selectFirt10Breeds = selectSomeBreeds(10);

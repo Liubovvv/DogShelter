@@ -1,10 +1,11 @@
 import React from 'react';
-import {Greeting} from 'components/Greeting';
-import {breedsInfo, text} from 'resources';
-import {List} from 'components/List';
-import {Description} from 'components/Description';
-import {Image} from 'components/Image';
-import {FooterHOC} from 'components/FooterHOC';
+
+import { Greeting } from 'components/Greeting';
+import { List } from 'components/List';
+import { Description } from 'components/Description';
+import { Image } from 'components/Image';
+import { FooterHOC } from 'components/FooterHOC';
+import { text } from 'store/domains/api';
 
 class Home extends React.Component{
      componentWillMount() {

@@ -1,5 +1,5 @@
 import actionTypes from './actionTypes'
-import {getBreedList, getImage} from '../../resources';
+import { getBreedList, getImage } from './api';
 
 export const getBreedImage = () => ({
     type: actionTypes.GET_IMAGES,

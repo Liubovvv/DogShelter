@@ -1,6 +1,7 @@
 import promiseMiddleware from 'redux-promise-middleware';
-import {createLogger} from 'redux-logger';
+import { createLogger } from 'redux-logger';
 import thunk from 'redux-thunk';
+
 import config from 'config';
 
 export default function create() {

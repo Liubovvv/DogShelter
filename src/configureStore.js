@@ -1,4 +1,5 @@
 import { createStore, applyMiddleware } from 'redux';
+
 import reducer from './reducers';
 import createMiddleware from 'store/middleware';
 
