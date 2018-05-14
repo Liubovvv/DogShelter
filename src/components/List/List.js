@@ -2,19 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
-import { ListItem } from "./ListItem";
+import { ListItem } from '../ListItem/ListItem';
+import  { ListWrapper } from './List.style';
 
 export const List = props => {
     const {breedsInfo} = props;
+
     return(
-        <div>
-            {breedsInfo.map( breed =>
+        <ListWrapper>
+            {breedsInfo && breedsInfo.map( breed =>
                 <ListItem
                     key={ v4() }
-                    {...breed}
+                    image={breed}
                 />
             )}
-        </div>
+        </ListWrapper>
     );
 };
 

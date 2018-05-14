@@ -1,0 +1,1 @@
+export const menuBackgroudColor = 'darkgray';

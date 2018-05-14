@@ -1,20 +1,22 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-import Home from "containers/Home";
-import { BreedOverview } from "containers/BreedOverview";
-import { AllBreads } from "containers/AllBreads";
-import { RandomBreed } from "containers/RandomBreed";
-import { Menu } from "../components/Menu";
+import { Home, BreedOverview, AllBreeds, RandomBreed } from 'containers/index';
+import { Menu } from '../components/Menu/Menu';
 
-export const Layout = () => (
-    <div>
-        <Menu />
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/breed-overview" component={BreedOverview} />
-            <Route path="/all-breads" component={AllBreads} />
-            <Route path="/random-breed" component={RandomBreed} />
-        </Switch>
-    </div>
-);
+export class Layout extends React.Component{
+    render()
+    {
+        return (
+            <div>
+                <Menu/>
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/breed-overview" component={BreedOverview}/>
+                    <Route path="/all-breads" component={AllBreeds}/>
+                    <Route path="/random-breed" component={RandomBreed}/>
+                </Switch>
+            </div>
+        );
+    }
+}

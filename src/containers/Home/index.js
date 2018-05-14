@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 
 import { loadData, getRandomFooterImages } from 'store/domains/actions';
 import { selectBreeds,selectFirt10Breeds, selectImages, selectFooterImages } from 'store/domains/selectors';
-import Home from './view';
+import { HomeFooter } from './Home';
 
 const mapStateToProps = state => ({
     ids: selectBreeds(state),
@@ -13,8 +13,6 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators(
-    {
-        loadData,getRandomFooterImages
-    }, dispatch
+    { loadData, getRandomFooterImages }, dispatch
 );
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(HomeFooter);
